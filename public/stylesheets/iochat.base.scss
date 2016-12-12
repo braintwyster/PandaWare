@@ -58,6 +58,23 @@
 		#_user-messages{
 			width: 25%;
 		}
+		#_users{
+			display: flex;
+    		flex-direction: column;
+    		background-color:transparent;
+    		._user-chat{
+    			display: flex;
+    			justify-content: space-between;
+    			margin-bottom: 3px;
+    			._new-msg-light{
+				    display: none;
+    				width: 8px;
+				    height: 8px;
+				    border-radius: 15px;
+				    background: #ff0000;
+    			}
+    		}
+		}
 		#_admin-chat{
 			padding:10px;
 			background:#efefef;
@@ -79,9 +96,8 @@
 
 /*MINI CHAT*/
 #_minichat{
-	.well{
+	._miniwell{
 		padding: 10px;
-		background: rgba(100,100,100,0.4);
 		border-radius: 5px 5px 0 0;
 	}
 	h4{

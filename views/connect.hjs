@@ -27,7 +27,7 @@
 
     	<div id="_messageArea" class="row">
             <div id="_importants"></div>
-			<div class="well">
+			<div class="well _miniwell">
 				<span id="_connectWith"><p>Connected Wtih</p> - <ul class="list-group _mini-ul" id="_users"></ul></span>
 				
 			</div>

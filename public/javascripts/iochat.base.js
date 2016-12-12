@@ -41,12 +41,13 @@ $(function(){
 		$impMsg.html('')
 		$impMsg.html('<p>' + data + '</p>')
 		$impMsg.slideDown(1000).delay(5000).slideUp(1000)
+		// socket.emit('conversation check', ids.sid)
 	})
 
 	socket.on('get users', function(users){
 		var html = ''
 		for(i =0; i < users.length; i++){
-			html += '<li class="btn btn-primary _user-chat" id="'+users[i].sid+'">'+users[i].username+'</li>'
+			html += '<li class="btn btn-primary _user-chat" id="'+users[i].sid+'">'+users[i].username+'<span class="_new-msg-light"></span></li>'
 		}
 		$users.html(html)
 	})
@@ -86,9 +87,12 @@ $(function(){
 	socket.on('update admin window', function(data){
 		if(data.sid == $cid)
 			$chat.append(placeMessage(data))
+		else
+			$("#"+data.sid+" ._new-msg-light").show(500)
 	})
 	$users.on("click", "._user-chat", function(event){
 	    socket.emit('get user data', this.id)
+		$("#"+this.id+" ._new-msg-light").hide(500)
 	})
 	socket.on('user data', function(data){
 		$cid = data.sid

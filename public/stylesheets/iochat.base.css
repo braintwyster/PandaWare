@@ -56,6 +56,23 @@
 #_admin-panel #_messageArea #_user-messages {
   width: 25%; }
 
+#_admin-panel #_messageArea #_users {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent; }
+
+#_admin-panel #_messageArea #_users ._user-chat {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px; }
+
+#_admin-panel #_messageArea #_users ._user-chat ._new-msg-light {
+  display: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 15px;
+  background: #ff0000; }
+
 #_admin-panel #_messageArea #_admin-chat {
   padding: 10px;
   background: #efefef;
@@ -77,9 +94,8 @@
   background: rgba(200, 200, 200, 0.4);
   border-radius: 5px; }
 
-#_minichat .well {
+#_minichat ._miniwell {
   padding: 10px;
-  background: rgba(100, 100, 100, 0.4);
   border-radius: 5px 5px 0 0; }
 
 #_minichat h4 {

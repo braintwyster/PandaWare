@@ -29,7 +29,7 @@
             <div id="_importants"></div>
             <div class="well" id="_user-messages">
                 <span id="_connectWith"><p>Connected Users</p> 
-                    <ul class="list-group _mini-ul" id="_users"></ul>
+                    <ul class="list-group" id="_users"></ul>
                 </span>
                 
             </div>
