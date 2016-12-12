@@ -1,0 +1,120 @@
+.well {
+  padding: 10px;
+  background: rgba(100, 100, 100, 0.4);
+  border-radius: 10px; }
+
+._invisibleBtn {
+  background: transparent;
+  border: none !important;
+  width: 0;
+  height: 0;
+  padding: 0; }
+
+#_messageArea {
+  display: none; }
+
+._left {
+  justify-content: flex-start; }
+
+._right {
+  justify-content: flex-end; }
+
+._sent {
+  background: rgba(0, 0, 255, 0.4); }
+
+._received {
+  background: rgba(0, 255, 0, 0.4); }
+
+._chatMessageContainer {
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+  padding: 5px; }
+
+._chatMessageContainer ._chatMessage {
+  max-width: 80%; }
+
+._chatMessageContainer ._chatMessage ._chatWords {
+  word-wrap: break-word; }
+
+/*ADMIN PANEL*/
+#_admin-panel #_messageArea {
+  height: 350px;
+  justify-content: space-between;
+  align-items: stretch; }
+
+#_admin-panel #_messageArea #_importants {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(255, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 10px;
+  font-weight: bold; }
+
+#_admin-panel #_messageArea #_user-messages {
+  width: 25%; }
+
+#_admin-panel #_messageArea #_admin-chat {
+  padding: 10px;
+  background: #efefef;
+  border-radius: 5px;
+  width: 70%;
+  display: flex;
+  flex-direction: column; }
+
+#_admin-panel #_messageArea #_admin-chat #_chat {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 5px;
+  height: 90%; }
+
+/*MINI CHAT*/
+#_minichat {
+  width: 300px;
+  background: rgba(200, 200, 200, 0.4);
+  border-radius: 5px; }
+
+#_minichat .well {
+  padding: 10px;
+  background: rgba(100, 100, 100, 0.4);
+  border-radius: 5px 5px 0 0; }
+
+#_minichat h4 {
+  font-size: 1.1em; }
+
+#_minichat #_connectWith {
+  display: flex;
+  align-items: baseline; }
+
+#_minichat #_connectWith p {
+  font-size: 1.2; }
+
+#_minichat #_connectWith ._mini-ul {
+  display: flex;
+  justify-content: space-around; }
+
+#_minichat #_connectWith ._mini-ul li {
+  padding: 3px; }
+
+#_minichat #_messageArea {
+  flex-direction: column; }
+
+#_minichat #_messageArea #_importants {
+  display: none;
+  background: rgba(255, 0, 0, 0.5);
+  border-radius: 15px 15px 0 0;
+  padding: 10px;
+  font-weight: bold; }
+
+#_minichat ._mini-chat-area {
+  height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+  background: #fff; }
+
+#_minichat #_messageForm {
+  padding: 0 10px 0 10px;
+  margin-bottom: 0; }

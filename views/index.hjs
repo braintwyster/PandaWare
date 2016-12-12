@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/iochat.base.css' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.4.0/dist/js/tether.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div class="container" id="_admin-panel">
+        <div id="_userArea" class="row">
+            <div class="col-md-12">
+                <form id="_userForm">
+                    <div class="form-group">
+                        <label>Enter Username</label>
+                        <input class="form-control" id="_username" />
+                        <br />
+                        <input type="submit" class="btn btn-primary" value="Login" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="_messageArea" class="row">
+            <div id="_importants"></div>
+            <div class="well" id="_user-messages">
+                <span id="_connectWith"><p>Connected Users</p> 
+                    <ul class="list-group _mini-ul" id="_users"></ul>
+                </span>
+                
+            </div>
+            <div id="_admin-chat">
+                <div class="_admin-chat-area" id="_chat"></div>
+
+                <form id="_messageForm">
+                    <label>Enter Message</label>
+                    <input class="form-control" id="_message" />
+                    <input type="submit" class="btn btn-primary _invisibleBtn" value="" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/javascripts/iochat.base.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
